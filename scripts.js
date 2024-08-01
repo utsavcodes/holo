@@ -5,13 +5,13 @@ document.addEventListener('DOMContentLoaded', () => {
     for (let i = 0; i < numStars; i++) {
         const star = document.createElement('div');
         star.className = 'star';
-        const size = Math.random() * 3 + 1; // Size range
+        const size = Math.random() * 2 + 1; // Size range
         star.style.width = `${size}px`;
         star.style.height = `${size}px`;
         star.style.top = `${Math.random() * 100}%`;
         star.style.left = `${Math.random() * 100}%`;
         // Adjust animation duration to vary the speed of shooting stars
-        star.style.animationDuration = `${Math.random() * 3 + 2}s`; 
+        star.style.animationDuration = `${Math.random() * 2 + 2}s`; 
         starContainer.appendChild(star);
     }
 });
